@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F19FF86A2388A708000EDD5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19FF8692388A708000EDD5A /* AppDelegate.swift */; };
-		F19FF86E2388A708000EDD5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19FF86D2388A708000EDD5A /* ViewController.swift */; };
 		F19FF8712388A708000EDD5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19FF86F2388A708000EDD5A /* Main.storyboard */; };
 		F19FF8732388A70A000EDD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19FF8722388A70A000EDD5A /* Assets.xcassets */; };
 		F19FF8762388A70A000EDD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19FF8742388A70A000EDD5A /* LaunchScreen.storyboard */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		F19FF8662388A708000EDD5A /* TalentGarden Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TalentGarden Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19FF8692388A708000EDD5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F19FF86D2388A708000EDD5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F19FF8702388A708000EDD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F19FF8722388A70A000EDD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19FF8752388A70A000EDD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,12 +82,11 @@
 		F19FF8682388A708000EDD5A /* TalentGarden Hackathon */ = {
 			isa = PBXGroup;
 			children = (
-				F1A289CD238920A7003CEB36 /* Extensions */,
+				F1A289BC2388AB78003CEB36 /* Networking */,
 				F1A289C623892027003CEB36 /* Cells */,
 				F1A289C323891F98003CEB36 /* Features */,
-				F1A289BC2388AB78003CEB36 /* Networking */,
+				F1A289CD238920A7003CEB36 /* Extensions */,
 				F19FF8692388A708000EDD5A /* AppDelegate.swift */,
-				F19FF86D2388A708000EDD5A /* ViewController.swift */,
 				F19FF86F2388A708000EDD5A /* Main.storyboard */,
 				F19FF8722388A70A000EDD5A /* Assets.xcassets */,
 				F1A289D523892B8A003CEB36 /* Media.xcassets */,
@@ -235,7 +232,6 @@
 				F1A289CC2389206F003CEB36 /* GenericTVC.swift in Sources */,
 				F1A289C02388ABAC003CEB36 /* HTTPMethod.swift in Sources */,
 				F1A289CF238920B3003CEB36 /* UIViewExtension.swift in Sources */,
-				F19FF86E2388A708000EDD5A /* ViewController.swift in Sources */,
 				F1A289C523891FAF003CEB36 /* ChallengesVC.swift in Sources */,
 				F1A289DE23892E41003CEB36 /* ChallengeHeader.swift in Sources */,
 				F1A289D123892901003CEB36 /* ChallengeView.swift in Sources */,

@@ -11,4 +11,5 @@ import Foundation
 struct Challenge: Decodable {
     var name: String
     var reward: Int
+    var locked: Bool
 }

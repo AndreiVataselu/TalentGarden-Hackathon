@@ -16,6 +16,9 @@ class ChallengeView: UIView {
     func configure(challenge: Challenge) {
         challengeNameLabel.text = challenge.name
         challengeRewardLabel.text = "\(challenge.reward)"
+        
+        challengeNameLabel.alpha = challenge.locked ? 0.5 : 1
+        challengeRewardLabel.alpha = challenge.locked ? 0.5 : 1
     }
     
 }
