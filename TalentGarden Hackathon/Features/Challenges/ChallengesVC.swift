@@ -18,7 +18,7 @@ class ChallengesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let header = ChallengeHeader.fromNib()
+        let header = NavigationHeader.fromNib()
         header.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
         header.center = navigationController?.navigationBar.center ?? CGPoint(x: 0, y: 0)
         navigationItem.titleView = header
@@ -35,11 +35,18 @@ extension ChallengesVC: UITableViewDataSource, UITableViewDelegate {
         return mock.count
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChallengeTVC.self), for: indexPath) as? ChallengeTVC else {
             return UITableViewCell()
         }
-        
         cell.wrappedView?.configure(challenge: mock[indexPath.row])
         return cell
     }
@@ -50,11 +57,11 @@ extension ChallengesVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = ChallengeTableHeader.fromNib()
-        header.configure(levelName: "Level 1", locked: false)
+        header.configure(levelName: "Level \(section)", locked: false)
         return header
     }
     
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        tableView.tableHeaderView = view
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
     }
 }

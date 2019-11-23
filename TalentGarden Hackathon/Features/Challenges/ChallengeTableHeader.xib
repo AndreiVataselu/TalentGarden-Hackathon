@@ -29,7 +29,7 @@
                     </subviews>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="nxr-a7-fmX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7uz-MG-Pzn"/>
                 <constraint firstItem="nxr-a7-fmX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="8M9-zW-SJw"/>

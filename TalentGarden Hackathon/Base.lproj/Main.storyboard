@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CKG-K3-h03">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q8n-A4-Joh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="HBQ-sl-rOq">
+        <!--Logged In Tab Bar-->
+        <scene sceneID="iBr-fq-KII">
             <objects>
-                <navigationController id="CKG-K3-h03" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NAW-W0-ugT">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                <tabBarController id="Q8n-A4-Joh" customClass="LoggedInTabBar" customModule="TalentGarden_Hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NYs-mq-JoX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="eK5-md-kwJ" kind="relationship" relationship="rootViewController" id="jcd-Rv-3IN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BIs-mk-6mj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAI-8a-GIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-326" y="75"/>
-        </scene>
-        <!--ChallengesVC-->
-        <scene sceneID="Ktm-gw-But">
-            <objects>
-                <viewController id="eK5-md-kwJ" customClass="ChallengesVC" customModule="TalentGarden_Hackathon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aLd-qT-qPl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eXz-o2-oRn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Ah0-5Z-hU1" firstAttribute="trailing" secondItem="eXz-o2-oRn" secondAttribute="trailing" id="JGB-kR-svA"/>
-                            <constraint firstItem="eXz-o2-oRn" firstAttribute="leading" secondItem="Ah0-5Z-hU1" secondAttribute="leading" id="NQs-33-Z4h"/>
-                            <constraint firstItem="eXz-o2-oRn" firstAttribute="top" secondItem="Ah0-5Z-hU1" secondAttribute="top" id="aT0-wN-0QQ"/>
-                            <constraint firstItem="Ah0-5Z-hU1" firstAttribute="bottom" secondItem="eXz-o2-oRn" secondAttribute="bottom" id="tEa-fX-0uy"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Ah0-5Z-hU1"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="N9m-Ig-RX5">
-                        <nil key="title"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="tableView" destination="eXz-o2-oRn" id="oK5-El-mBC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iuV-JA-SWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="615" y="75"/>
+            <point key="canvasLocation" x="-326" y="860"/>
         </scene>
     </scenes>
 </document>
