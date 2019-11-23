@@ -12,6 +12,9 @@
 		F19FF8712388A708000EDD5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19FF86F2388A708000EDD5A /* Main.storyboard */; };
 		F19FF8732388A70A000EDD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19FF8722388A70A000EDD5A /* Assets.xcassets */; };
 		F19FF8762388A70A000EDD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19FF8742388A70A000EDD5A /* LaunchScreen.storyboard */; };
+		F1A289BE2388AB8D003CEB36 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289BD2388AB8D003CEB36 /* Request.swift */; };
+		F1A289C02388ABAC003CEB36 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289BF2388ABAC003CEB36 /* HTTPMethod.swift */; };
+		F1A289C22388AC5C003CEB36 /* NetworkInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289C12388AC5C003CEB36 /* NetworkInitiator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F19FF8722388A70A000EDD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19FF8752388A70A000EDD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F19FF8772388A70A000EDD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A289BD2388AB8D003CEB36 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F1A289BF2388ABAC003CEB36 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F1A289C12388AC5C003CEB36 /* NetworkInitiator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInitiator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		F19FF8682388A708000EDD5A /* TalentGarden Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				F1A289BC2388AB78003CEB36 /* Networking */,
 				F19FF8692388A708000EDD5A /* AppDelegate.swift */,
 				F19FF86D2388A708000EDD5A /* ViewController.swift */,
 				F19FF86F2388A708000EDD5A /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				F19FF8772388A70A000EDD5A /* Info.plist */,
 			);
 			path = "TalentGarden Hackathon";
+			sourceTree = "<group>";
+		};
+		F1A289BC2388AB78003CEB36 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F1A289BD2388AB8D003CEB36 /* Request.swift */,
+				F1A289BF2388ABAC003CEB36 /* HTTPMethod.swift */,
+				F1A289C12388AC5C003CEB36 /* NetworkInitiator.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A289C02388ABAC003CEB36 /* HTTPMethod.swift in Sources */,
 				F19FF86E2388A708000EDD5A /* ViewController.swift in Sources */,
+				F1A289C22388AC5C003CEB36 /* NetworkInitiator.swift in Sources */,
+				F1A289BE2388AB8D003CEB36 /* Request.swift in Sources */,
 				F19FF86A2388A708000EDD5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
