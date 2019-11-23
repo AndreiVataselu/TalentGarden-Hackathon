@@ -27,8 +27,12 @@ class NavigationHeader: UIView {
         rightImageView.isHidden = true
     }
     
-    func configure(title: String, image: UIImage, position: ImageAlignment) {
+    func configure(title: String) {
         titleLabel.text = "\(title)"
+    }
+    
+    func configure(title: String, image: UIImage, position: ImageAlignment) {
+        configure(title: title)
         switch position {
         case .left:
             leftImageView.image = image

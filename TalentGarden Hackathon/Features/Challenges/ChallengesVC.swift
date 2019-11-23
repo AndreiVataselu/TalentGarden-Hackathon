@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ChallengesVC: UIViewController {
+class ChallengesVC: BaseVC {
     @IBOutlet private weak var tableView: UITableView!
     let mock = [Challenge(name: "Send money through our app", reward: 10, locked: false),
                 Challenge(name: "Uninstall the app", reward: 1000, locked: false)]
@@ -18,10 +18,7 @@ class ChallengesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let header = NavigationHeader.fromNib()
-        header.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
-        header.center = navigationController?.navigationBar.center ?? CGPoint(x: 0, y: 0)
-        navigationItem.titleView = header
+        header?.configure(title: "2414141", image: UIImage(named: "dollar")!, position: .right)
         
         tableView.register(ChallengeTVC.self, forCellReuseIdentifier: String(describing: ChallengeTVC.self))
         tableView.delegate = self

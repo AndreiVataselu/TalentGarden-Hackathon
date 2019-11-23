@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F12632F023898A0E00927756 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12632EF23898A0E00927756 /* BaseVC.swift */; };
 		F160B54823896979008C5966 /* LoggedInTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160B54723896979008C5966 /* LoggedInTabBar.swift */; };
 		F160B54A238969C0008C5966 /* ChallengesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F160B549238969C0008C5966 /* ChallengesVC.xib */; };
 		F160B54C23896A1D008C5966 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160B54B23896A1D008C5966 /* UIViewControllerExtension.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F12632EF23898A0E00927756 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		F160B54723896979008C5966 /* LoggedInTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInTabBar.swift; sourceTree = "<group>"; };
 		F160B549238969C0008C5966 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
 		F160B54B23896A1D008C5966 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -78,7 +80,10 @@
 		F160B5462389696A008C5966 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F1A289DB23892E24003CEB36 /* NavigationHeader.xib */,
+				F1A289DD23892E41003CEB36 /* NavigationHeader.swift */,
 				F160B54723896979008C5966 /* LoggedInTabBar.swift */,
+				F12632EF23898A0E00927756 /* BaseVC.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -171,8 +176,6 @@
 			children = (
 				F1A289C423891FAF003CEB36 /* ChallengesVC.swift */,
 				F160B549238969C0008C5966 /* ChallengesVC.xib */,
-				F1A289DB23892E24003CEB36 /* NavigationHeader.xib */,
-				F1A289DD23892E41003CEB36 /* NavigationHeader.swift */,
 				F1DD671D238940EF000564A3 /* ChallengeTableHeader.xib */,
 				F1DD671F23894228000564A3 /* ChallengeTableHeader.swift */,
 			);
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A289CC2389206F003CEB36 /* GenericTVC.swift in Sources */,
+				F12632F023898A0E00927756 /* BaseVC.swift in Sources */,
 				F1A289C02388ABAC003CEB36 /* HTTPMethod.swift in Sources */,
 				F1DD672823895019000564A3 /* UserProfile.swift in Sources */,
 				F1A289CF238920B3003CEB36 /* UIViewExtension.swift in Sources */,

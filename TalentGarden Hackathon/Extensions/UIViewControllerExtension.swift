@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIViewController {
+extension UIViewController {    
     private static func loadNib<T: UIViewController>() -> T? {
         return T(nibName: String(describing: T.self), bundle: nil)
     }

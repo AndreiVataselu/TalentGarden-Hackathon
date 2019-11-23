@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
-class MyProfileVC: UIViewController {
-    
+class MyProfileVC: BaseVC {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        header?.configure(title: "My Profile")
+    }
 }

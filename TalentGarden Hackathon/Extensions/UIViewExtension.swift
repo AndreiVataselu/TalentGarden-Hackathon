@@ -11,6 +11,8 @@ import UIKit
 
 extension UIView {
     private static func loadNib<T: UIView>() -> T? {
+        var header: NavigationHeader?
+        
         return UINib(nibName: String(describing: T.self), bundle: nil).instantiate(withOwner: nil, options: nil).first as? T
     }
     
