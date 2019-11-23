@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F100583923899BD100BD04B5 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100583823899BD100BD04B5 /* Transaction.swift */; };
 		F12632F023898A0E00927756 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12632EF23898A0E00927756 /* BaseVC.swift */; };
 		F160B54823896979008C5966 /* LoggedInTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160B54723896979008C5966 /* LoggedInTabBar.swift */; };
 		F160B54A238969C0008C5966 /* ChallengesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F160B549238969C0008C5966 /* ChallengesVC.xib */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F100583823899BD100BD04B5 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		F12632EF23898A0E00927756 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		F160B54723896979008C5966 /* LoggedInTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInTabBar.swift; sourceTree = "<group>"; };
 		F160B549238969C0008C5966 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F1A289D823892D3A003CEB36 /* Challenge.swift */,
+				F100583823899BD100BD04B5 /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				F160B54C23896A1D008C5966 /* UIViewControllerExtension.swift in Sources */,
 				F1A289C523891FAF003CEB36 /* ChallengesVC.swift in Sources */,
 				F1A289DE23892E41003CEB36 /* NavigationHeader.swift in Sources */,
+				F100583923899BD100BD04B5 /* Transaction.swift in Sources */,
 				F1A289D123892901003CEB36 /* ChallengeView.swift in Sources */,
 				F1A289C22388AC5C003CEB36 /* NetworkInitiator.swift in Sources */,
 				F1A289BE2388AB8D003CEB36 /* Request.swift in Sources */,
