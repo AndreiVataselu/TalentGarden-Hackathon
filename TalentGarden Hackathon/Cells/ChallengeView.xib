@@ -44,22 +44,63 @@
                         </imageView>
                     </subviews>
                 </stackView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIy-0v-bHX" userLabel="Claim Button">
+                    <rect key="frame" x="305" y="46" width="150" height="40"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cbw-Uj-7sg">
+                            <rect key="frame" x="29" y="8.5" width="92" height="23"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLAIM 25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfR-zd-iCX">
+                                    <rect key="frame" x="0.0" y="0.0" width="62" height="23"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="13"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="ZAE-iB-Q7H">
+                                    <rect key="frame" x="66" y="0.0" width="26" height="23"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5v-cm-bO7">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1176470588" green="0.83921568629999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="I5v-cm-bO7" firstAttribute="leading" secondItem="RIy-0v-bHX" secondAttribute="leading" id="7hp-wT-LKS"/>
+                        <constraint firstAttribute="height" constant="40" id="FUQ-mj-y8M"/>
+                        <constraint firstAttribute="trailing" secondItem="I5v-cm-bO7" secondAttribute="trailing" id="WSl-x2-26k"/>
+                        <constraint firstItem="cbw-Uj-7sg" firstAttribute="centerX" secondItem="RIy-0v-bHX" secondAttribute="centerX" id="Zfm-Y6-eR4"/>
+                        <constraint firstAttribute="width" constant="150" id="brW-pE-456"/>
+                        <constraint firstAttribute="bottom" secondItem="I5v-cm-bO7" secondAttribute="bottom" id="pnn-F8-MWh"/>
+                        <constraint firstItem="I5v-cm-bO7" firstAttribute="top" secondItem="RIy-0v-bHX" secondAttribute="top" id="uoe-qH-t9c"/>
+                        <constraint firstItem="cbw-Uj-7sg" firstAttribute="centerY" secondItem="RIy-0v-bHX" secondAttribute="centerY" id="vqy-y0-Cap"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="asL-3U-eEN" secondAttribute="bottom" id="0cK-c6-gwi"/>
                 <constraint firstItem="hsj-Va-2Q8" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="A0z-TA-Jbr"/>
                 <constraint firstItem="hsj-Va-2Q8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BH0-7M-f3c"/>
+                <constraint firstItem="RIy-0v-bHX" firstAttribute="centerY" secondItem="bwe-9L-6hg" secondAttribute="centerY" id="EeN-sa-4Pj"/>
                 <constraint firstItem="hsj-Va-2Q8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="Ggm-yB-J2B"/>
                 <constraint firstAttribute="trailing" secondItem="asL-3U-eEN" secondAttribute="trailing" constant="30" id="NKc-hw-kjD"/>
                 <constraint firstItem="bwe-9L-6hg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bE8-FT-274"/>
                 <constraint firstAttribute="trailing" secondItem="bwe-9L-6hg" secondAttribute="trailing" constant="30" id="lWN-AV-3NY"/>
                 <constraint firstItem="asL-3U-eEN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="rCp-YY-5Q3"/>
+                <constraint firstAttribute="trailing" secondItem="RIy-0v-bHX" secondAttribute="trailing" constant="8" id="rw3-rO-0FM"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="challengeNameLabel" destination="hsj-Va-2Q8" id="SbA-9L-S0q"/>
                 <outlet property="challengeRewardLabel" destination="oeO-Gl-F77" id="79b-c1-h5d"/>
+                <outlet property="claimButton" destination="RIy-0v-bHX" id="gfp-e7-kJT"/>
             </connections>
             <point key="canvasLocation" x="173.18840579710147" y="-150"/>
         </view>

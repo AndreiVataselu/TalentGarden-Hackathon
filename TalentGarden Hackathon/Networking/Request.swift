@@ -10,18 +10,18 @@ import Foundation
 
 protocol Request {
     var path: String { get }
-    var parameters: [String: String] { get }
     var method: HTTPMethod { get }
-    var url: URL { get }
+    var url: URLRequest { get }
+    var header: [String: String] { get }
 }
 
 extension Request {
     var url: URLRequest {
-        let url = URL(string: "basePath" + path)!
+        let url = URL(string: "http://10.19.2.240:8080" + path)!
         return URLRequest(url: url)
     }
 
-    var parameters: [String: String] {
+    var header: [String: String] {
         return [:]
     }
 }

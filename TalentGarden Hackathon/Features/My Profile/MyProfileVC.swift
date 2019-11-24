@@ -26,6 +26,8 @@ class MyProfileVC: BaseVC {
         layer.shadowColor = UIColor(red: 0, green: 174/255, blue: 239/255, alpha: 0.5).cgColor
         layer.shadowRadius = 4
         layer.shadowOffset = CGSize(width: 0, height: 3)
+        
+        TransactionsManager.shared.getTransactions()
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -18,6 +18,7 @@ class QuizResultVC: BaseVC {
     @IBOutlet private weak var buttonContainer: UIView!
     @IBOutlet private weak var coinsImageView: UIImageView!
     var config: QuizResultConfig?
+    var secretConfig: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,11 @@ class QuizResultVC: BaseVC {
         view.backgroundColor = UIColor(red: 0, green: 135/255, blue: 1, alpha: 1)
         navigationItem.hidesBackButton = true
         
-        configureView()
+        if secretConfig {
+            secretConfigurationForDemo()
+        } else {
+            configureView()
+        }
     }
     
     private func configureView() {
@@ -34,22 +39,42 @@ class QuizResultVC: BaseVC {
             return
         }
         
-        buttonContainer.backgroundColor = config.correctAnswer ? UIColor.seaweed : UIColor.ketchup
+        buttonContainer.backgroundColor = UIColor.seaweed
+        resultImageView.image = config.correctAnswer ? UIImage(named: "correct")! : UIImage(named: "wrong")!
         coinsImageView.isHidden = !config.correctAnswer
         titleLabel.text = config.correctAnswer ? "Correct Answer" : "Wrong Answer"
         bodyLabel.text = config.body
+        bodyLabel.isHidden = config.correctAnswer
         buttonLabel.text = config.correctAnswer ? "CLAIM \(config.reward)" : "OK"
     }
+    
+    func secretConfigurationForDemo() {
+        coinsImageView.isHidden = true
+        titleLabel.text = "You answered correctly \n\(QuizCoordinator.shared.correctAnswers) / \(QuizCoordinator.shared.questions.count) questions"
+        buttonLabel.text = "QUIT"
+        bodyLabel.isHidden = true
+    }
+    
     
     @IBAction private func buttonPressed(_ sender: UIButton) {
         if config?.correctAnswer ?? false {
             myProfile.coins += config?.reward ?? 0
-            NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "goToChallenges")))
-        } else {
-            NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "goToMyProfile")))
         }
         
-        navigationController?.popToRootViewController(animated: false)
+        if QuizCoordinator.shared.currentQuestionIndex + 1 < QuizCoordinator.shared.questions.count {
+            QuizCoordinator.shared.nextQuestion()
+            let currentIndex = QuizCoordinator.shared.currentQuestionIndex
+            let question = QuizCoordinator.shared.questions[currentIndex]
+            let nextQuestionVC = QuizVC.fromNib()
+            let presenter = QuizPresenter(view: nextQuestionVC, question: question)
+            nextQuestionVC.presenter = presenter
+            navigationController?.pushViewController(nextQuestionVC, animated: true)
+            
+        } else {
+            NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "goToMyProfile")))
+            navigationController?.popToRootViewController(animated: false)
+        }
+       
     }
     
 }

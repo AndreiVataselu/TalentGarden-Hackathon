@@ -11,6 +11,7 @@ import Foundation
 struct QuizQuestion {
     var question: String
     var answers: [String]
+    var details: String
     var correctAnswer: String
     var reward: Int
 }

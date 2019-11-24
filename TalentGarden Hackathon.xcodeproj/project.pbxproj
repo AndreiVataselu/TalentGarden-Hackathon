@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63BEFEC33539BA617A67D9EA /* Pods_TalentGarden_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BA10870425A4F0C2A207D8 /* Pods_TalentGarden_Hackathon.framework */; };
 		F100583923899BD100BD04B5 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100583823899BD100BD04B5 /* Transaction.swift */; };
 		F12632F023898A0E00927756 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12632EF23898A0E00927756 /* BaseVC.swift */; };
 		F160B54823896979008C5966 /* LoggedInTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160B54723896979008C5966 /* LoggedInTabBar.swift */; };
@@ -36,9 +37,13 @@
 		F1A289DC23892E24003CEB36 /* NavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A289DB23892E24003CEB36 /* NavigationHeader.xib */; };
 		F1A289DE23892E41003CEB36 /* NavigationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289DD23892E41003CEB36 /* NavigationHeader.swift */; };
 		F1A289E02389367A003CEB36 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289DF2389367A003CEB36 /* UIColorExtension.swift */; };
+		F1C19A5B238A73B6007FD372 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C19A5A238A73B6007FD372 /* QuizManager.swift */; };
+		F1C19A5D238A752A007FD372 /* QuizCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C19A5C238A752A007FD372 /* QuizCoordinator.swift */; };
 		F1CE58B1238A2D4300DE9BC5 /* QuizResultConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */; };
 		F1CE58B3238A43C000DE9BC5 /* QuizStartingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CE58B2238A43C000DE9BC5 /* QuizStartingVC.xib */; };
 		F1CE58B5238A44AF00DE9BC5 /* QuizStartingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE58B4238A44AF00DE9BC5 /* QuizStartingVC.swift */; };
+		F1CE58B7238A480E00DE9BC5 /* TransactionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE58B6238A480E00DE9BC5 /* TransactionsRequest.swift */; };
+		F1CE58B9238A4E0200DE9BC5 /* TransactionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE58B8238A4E0200DE9BC5 /* TransactionsManager.swift */; };
 		F1DD671E238940EF000564A3 /* ChallengeTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DD671D238940EF000564A3 /* ChallengeTableHeader.xib */; };
 		F1DD672023894228000564A3 /* ChallengeTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD671F23894228000564A3 /* ChallengeTableHeader.swift */; };
 		F1DD672323894FBD000564A3 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD672223894FBD000564A3 /* MyProfileVC.swift */; };
@@ -47,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		361DA5967B0EE12713268E69 /* Pods-TalentGarden Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentGarden Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-TalentGarden Hackathon/Pods-TalentGarden Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		5ABBCE46DC9FFCF3B6CFAA4F /* Pods-TalentGarden Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentGarden Hackathon.release.xcconfig"; path = "Target Support Files/Pods-TalentGarden Hackathon/Pods-TalentGarden Hackathon.release.xcconfig"; sourceTree = "<group>"; };
+		63BA10870425A4F0C2A207D8 /* Pods_TalentGarden_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalentGarden_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F100583823899BD100BD04B5 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		F12632EF23898A0E00927756 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		F160B54723896979008C5966 /* LoggedInTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInTabBar.swift; sourceTree = "<group>"; };
@@ -67,7 +75,7 @@
 		F19FF8772388A70A000EDD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1A289BD2388AB8D003CEB36 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F1A289BF2388ABAC003CEB36 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		F1A289C12388AC5C003CEB36 /* NetworkInitiator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInitiator.swift; sourceTree = "<group>"; };
+		F1A289C12388AC5C003CEB36 /* NetworkInitiator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInitiator.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		F1A289C423891FAF003CEB36 /* ChallengesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesVC.swift; sourceTree = "<group>"; };
 		F1A289CB2389206F003CEB36 /* GenericTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTVC.swift; sourceTree = "<group>"; };
 		F1A289CE238920B3003CEB36 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -78,9 +86,13 @@
 		F1A289DB23892E24003CEB36 /* NavigationHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationHeader.xib; sourceTree = "<group>"; };
 		F1A289DD23892E41003CEB36 /* NavigationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeader.swift; sourceTree = "<group>"; };
 		F1A289DF2389367A003CEB36 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F1C19A5A238A73B6007FD372 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+		F1C19A5C238A752A007FD372 /* QuizCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCoordinator.swift; sourceTree = "<group>"; };
 		F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultConfig.swift; sourceTree = "<group>"; };
 		F1CE58B2238A43C000DE9BC5 /* QuizStartingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizStartingVC.xib; sourceTree = "<group>"; };
 		F1CE58B4238A44AF00DE9BC5 /* QuizStartingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStartingVC.swift; sourceTree = "<group>"; };
+		F1CE58B6238A480E00DE9BC5 /* TransactionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRequest.swift; sourceTree = "<group>"; };
+		F1CE58B8238A4E0200DE9BC5 /* TransactionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsManager.swift; sourceTree = "<group>"; };
 		F1DD671D238940EF000564A3 /* ChallengeTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeTableHeader.xib; sourceTree = "<group>"; };
 		F1DD671F23894228000564A3 /* ChallengeTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableHeader.swift; sourceTree = "<group>"; };
 		F1DD672223894FBD000564A3 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
@@ -93,12 +105,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BEFEC33539BA617A67D9EA /* Pods_TalentGarden_Hackathon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30D936EAFCD5DE742FB9A101 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				361DA5967B0EE12713268E69 /* Pods-TalentGarden Hackathon.debug.xcconfig */,
+				5ABBCE46DC9FFCF3B6CFAA4F /* Pods-TalentGarden Hackathon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E81A5862A8BF877715457A6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63BA10870425A4F0C2A207D8 /* Pods_TalentGarden_Hackathon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F160B5462389696A008C5966 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +143,9 @@
 		F165F60D2389A712006DE2E7 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				F1CE58B8238A4E0200DE9BC5 /* TransactionsManager.swift */,
 				F165F60E2389A735006DE2E7 /* AchievementManager.swift */,
+				F1C19A5A238A73B6007FD372 /* QuizManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -129,6 +161,7 @@
 				F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */,
 				F1CE58B2238A43C000DE9BC5 /* QuizStartingVC.xib */,
 				F1CE58B4238A44AF00DE9BC5 /* QuizStartingVC.swift */,
+				F1C19A5C238A752A007FD372 /* QuizCoordinator.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -138,6 +171,8 @@
 			children = (
 				F19FF8682388A708000EDD5A /* TalentGarden Hackathon */,
 				F19FF8672388A708000EDD5A /* Products */,
+				30D936EAFCD5DE742FB9A101 /* Pods */,
+				E81A5862A8BF877715457A6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +211,7 @@
 				F1A289BD2388AB8D003CEB36 /* Request.swift */,
 				F1A289BF2388ABAC003CEB36 /* HTTPMethod.swift */,
 				F1A289C12388AC5C003CEB36 /* NetworkInitiator.swift */,
+				F1CE58B6238A480E00DE9BC5 /* TransactionsRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -255,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F19FF87A2388A70A000EDD5A /* Build configuration list for PBXNativeTarget "TalentGarden Hackathon" */;
 			buildPhases = (
+				CCDCFFE77A1917F61376B6A0 /* [CP] Check Pods Manifest.lock */,
 				F19FF8622388A708000EDD5A /* Sources */,
 				F19FF8632388A708000EDD5A /* Frameworks */,
 				F19FF8642388A708000EDD5A /* Resources */,
+				05FDCDB4607E4AFE190DF063 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,13 +361,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05FDCDB4607E4AFE190DF063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalentGarden Hackathon/Pods-TalentGarden Hackathon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalentGarden Hackathon/Pods-TalentGarden Hackathon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalentGarden Hackathon/Pods-TalentGarden Hackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCDCFFE77A1917F61376B6A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalentGarden Hackathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F19FF8622388A708000EDD5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1CE58B7238A480E00DE9BC5 /* TransactionsRequest.swift in Sources */,
 				F1A289CC2389206F003CEB36 /* GenericTVC.swift in Sources */,
 				F165F612238A1D36006DE2E7 /* QuizVC.swift in Sources */,
+				F1CE58B9238A4E0200DE9BC5 /* TransactionsManager.swift in Sources */,
 				F1CE58B5238A44AF00DE9BC5 /* QuizStartingVC.swift in Sources */,
 				F12632F023898A0E00927756 /* BaseVC.swift in Sources */,
 				F1A289C02388ABAC003CEB36 /* HTTPMethod.swift in Sources */,
@@ -350,8 +432,10 @@
 				F19FF86A2388A708000EDD5A /* AppDelegate.swift in Sources */,
 				F1DD672323894FBD000564A3 /* MyProfileVC.swift in Sources */,
 				F165F618238A2275006DE2E7 /* QuizQuestion.swift in Sources */,
+				F1C19A5B238A73B6007FD372 /* QuizManager.swift in Sources */,
 				F1A289D923892D3A003CEB36 /* Challenge.swift in Sources */,
 				F1A289E02389367A003CEB36 /* UIColorExtension.swift in Sources */,
+				F1C19A5D238A752A007FD372 /* QuizCoordinator.swift in Sources */,
 				F160B54823896979008C5966 /* LoggedInTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +578,7 @@
 		};
 		F19FF87B2388A70A000EDD5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 361DA5967B0EE12713268E69 /* Pods-TalentGarden Hackathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +597,7 @@
 		};
 		F19FF87C2388A70A000EDD5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ABBCE46DC9FFCF3B6CFAA4F /* Pods-TalentGarden Hackathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

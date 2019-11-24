@@ -22,3 +22,10 @@ struct Transaction: Decodable {
     var debtorAccountIban: String?
     var merchant: String?
 }
+
+extension Transaction {
+    func transactionAmountValue() -> Double {
+        let transactionVal = Double(transactionAmount ?? "0.0") ?? 0
+        return transactionVal < 0 ? transactionVal * -1 : transactionVal
+    }
+}

@@ -13,3 +13,4 @@ struct QuizResultConfig {
     var body: String
     var reward: Int
 }
+

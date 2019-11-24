@@ -15,22 +15,18 @@ protocol QuizPresenterProtocol: class {
 
 class QuizPresenter: QuizPresenterProtocol {
     weak var view: QuizViewProtocol?
+    var question: QuizQuestion
     
-    init(view: QuizViewProtocol) {
+    init(view: QuizViewProtocol, question: QuizQuestion) {
         self.view = view
+        self.question = question
     }
-    
-    let mockQuestion = QuizQuestion(question: "How much did you spend for online shopping last month?",
-                                    answers: ["20 euro", "15 euro", "3 euro"],
-                                    correctAnswer: "3 euro",
-                                    reward: 15)
-    
-    var question: QuizQuestion {
-        return mockQuestion
-    }
-    
     
     func answerSelected(_ answer: String) {
         view?.goToResult(correctAnswer: answer == question.correctAnswer)
+        
+        if question.correctAnswer == answer {
+            QuizCoordinator.shared.correctAnswers += 1
+        }
     }
 }

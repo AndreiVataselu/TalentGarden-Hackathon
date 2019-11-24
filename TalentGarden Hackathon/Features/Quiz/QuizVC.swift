@@ -20,7 +20,6 @@ class QuizVC: BaseVC {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = QuizPresenter(view: self)
         header?.configure(title: "Quiz", image: UIImage(named: "chess")!, position: .left)
         view.backgroundColor = UIColor(red: 0, green: 135/255, blue: 1, alpha: 1)
         navigationItem.hidesBackButton = true
@@ -39,9 +38,15 @@ class QuizVC: BaseVC {
 
 extension QuizVC: QuizViewProtocol {
     func goToResult(correctAnswer: Bool) {
-        let config = QuizResultConfig(correctAnswer: correctAnswer, body: "You spent 3 euro for online shopping last month ", reward: correctAnswer ? (presenter?.question.reward ?? 0): 0)
         let resultVC = QuizResultVC.fromNib()
-        resultVC.config = config
+
+        if QuizCoordinator.shared.currentQuestionIndex + 1 < QuizCoordinator.shared.questions.count {
+            let config = QuizResultConfig(correctAnswer: correctAnswer, body: "\(presenter?.question.details ?? "")", reward: correctAnswer ? (presenter?.question.reward ?? 0): 0)
+            resultVC.config = config
+        } else {
+            resultVC.secretConfig = true
+        }
+        
         navigationController?.pushViewController(resultVC, animated: true)
     }
 }

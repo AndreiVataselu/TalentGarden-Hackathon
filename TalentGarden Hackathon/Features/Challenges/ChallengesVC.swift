@@ -37,7 +37,10 @@ class ChallengesVC: BaseVC {
 
 extension ChallengesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mock.count
+        if section == 0 {
+            return AchievementManager.shared.unlockedAchievements.count
+        }
+        return AchievementManager.shared.lockedAchievements.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -52,7 +55,14 @@ extension ChallengesVC: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChallengeTVC.self), for: indexPath) as? ChallengeTVC else {
             return UITableViewCell()
         }
-        cell.wrappedView?.configure(challenge: mock[indexPath.row])
+        
+        var data: Challenge = indexPath.section == 0 ? AchievementManager.shared.unlockedAchievements[indexPath.row] :
+                                                         AchievementManager.shared.lockedAchievements[indexPath.row]
+        
+        cell.wrappedView?.configure(challenge: data)
+        if indexPath.section == 0 {
+            cell.wrappedView?.showClaimButton()
+        }
         return cell
     }
     
@@ -62,7 +72,7 @@ extension ChallengesVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = ChallengeTableHeader.fromNib()
-        header.configure(levelName: "Level \(section)", locked: false)
+        header.configure(levelName: "Level \(section)", locked: section == 1)
         return header
     }
     

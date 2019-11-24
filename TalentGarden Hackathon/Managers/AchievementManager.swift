@@ -8,14 +8,17 @@
 
 import Foundation
 
-struct Achievement {
-    var name: String
-    var reward: Int
-}
-
 class AchievementManager {
     static let shared = AchievementManager()
+
+  
+    var lockedAchievements = [Challenge]()
+    var unlockedAchievements = [Challenge]()
     
-    var lockedAchievements = [Achievement]()
-    var unlockedAchievements = [Achievement]()
+    private init() {
+        unlockedAchievements = [Challenge(name: "Complete your first quiz!", reward: 15, locked: false)]
+        lockedAchievements = [Challenge(name: "Open your first deposit account", reward: 30, locked: true)]
+    }
+    
+    
 }

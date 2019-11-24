@@ -12,6 +12,8 @@ struct UserProfile: Decodable {
     var firstName: String
     var lastName: String
     var coins: Int
+    
+    var transactions: [Transaction] = []
 }
 
 extension UserProfile {

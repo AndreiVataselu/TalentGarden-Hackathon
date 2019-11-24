@@ -42,7 +42,7 @@ class QuizStartingVC: BaseVC {
     }
     
     @IBAction private func buttonPressed(_ sender: UIButton) {
-        let quizVC = QuizVC.fromNib()
+        let quizVC = QuizCoordinator.shared.start()
         navigationController?.pushViewController(quizVC, animated: true)
     }
 }

@@ -12,6 +12,7 @@ import UIKit
 class ChallengeView: UIView {
     @IBOutlet private weak var challengeNameLabel: UILabel!
     @IBOutlet private weak var challengeRewardLabel: UILabel!
+    @IBOutlet private weak var claimButton: UIView!
     
     func configure(challenge: Challenge) {
         challengeNameLabel.text = challenge.name
@@ -21,6 +22,9 @@ class ChallengeView: UIView {
         challengeRewardLabel.alpha = challenge.locked ? 0.5 : 1
     }
     
+    func showClaimButton() {
+        claimButton.isHidden = false
+    }
 }
 
 class ChallengeTVC: GenericTVC<ChallengeView> {}
