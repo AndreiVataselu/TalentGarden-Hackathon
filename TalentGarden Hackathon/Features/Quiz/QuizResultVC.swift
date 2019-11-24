@@ -44,7 +44,12 @@ class QuizResultVC: BaseVC {
     @IBAction private func buttonPressed(_ sender: UIButton) {
         if config?.correctAnswer ?? false {
             myProfile.coins += config?.reward ?? 0
+            NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "goToChallenges")))
+        } else {
+            NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "goToMyProfile")))
         }
+        
+        navigationController?.popToRootViewController(animated: false)
     }
     
 }

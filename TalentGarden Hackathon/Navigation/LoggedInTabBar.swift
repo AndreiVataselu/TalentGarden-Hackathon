@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+
 enum LoggedInFlows: CaseIterable {
     case myProfile
     case challenges
@@ -21,7 +23,7 @@ enum LoggedInFlows: CaseIterable {
         case .challenges:
             return ChallengesVC.fromNib()
         case .quiz:
-            return QuizVC.fromNib()
+            return QuizStartingVC.fromNib()
         }
     }
     
@@ -61,8 +63,22 @@ enum LoggedInFlows: CaseIterable {
 class LoggedInTabBar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(goToChallenges(_:)), name: Notification.Name(rawValue: "goToChallenges"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(goToMyProfile(_:)), name: Notification.Name(rawValue: "goToMyProfile"), object: nil)
+        
         let viewControllers = LoggedInFlows.allCases.map { $0.flow() }
         setViewControllers(viewControllers, animated: false)
+    }
+    
+    @objc
+    private func goToChallenges(_ notification: Notification?) {
+        selectedIndex = 1
+    }
+    
+    @objc
+    private func goToMyProfile(_ notification: Notification?) {
+        selectedIndex = 0
     }
     
 }

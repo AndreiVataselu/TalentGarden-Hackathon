@@ -37,6 +37,8 @@
 		F1A289DE23892E41003CEB36 /* NavigationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289DD23892E41003CEB36 /* NavigationHeader.swift */; };
 		F1A289E02389367A003CEB36 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289DF2389367A003CEB36 /* UIColorExtension.swift */; };
 		F1CE58B1238A2D4300DE9BC5 /* QuizResultConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */; };
+		F1CE58B3238A43C000DE9BC5 /* QuizStartingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CE58B2238A43C000DE9BC5 /* QuizStartingVC.xib */; };
+		F1CE58B5238A44AF00DE9BC5 /* QuizStartingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE58B4238A44AF00DE9BC5 /* QuizStartingVC.swift */; };
 		F1DD671E238940EF000564A3 /* ChallengeTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DD671D238940EF000564A3 /* ChallengeTableHeader.xib */; };
 		F1DD672023894228000564A3 /* ChallengeTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD671F23894228000564A3 /* ChallengeTableHeader.swift */; };
 		F1DD672323894FBD000564A3 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD672223894FBD000564A3 /* MyProfileVC.swift */; };
@@ -77,6 +79,8 @@
 		F1A289DD23892E41003CEB36 /* NavigationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeader.swift; sourceTree = "<group>"; };
 		F1A289DF2389367A003CEB36 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultConfig.swift; sourceTree = "<group>"; };
+		F1CE58B2238A43C000DE9BC5 /* QuizStartingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizStartingVC.xib; sourceTree = "<group>"; };
+		F1CE58B4238A44AF00DE9BC5 /* QuizStartingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStartingVC.swift; sourceTree = "<group>"; };
 		F1DD671D238940EF000564A3 /* ChallengeTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeTableHeader.xib; sourceTree = "<group>"; };
 		F1DD671F23894228000564A3 /* ChallengeTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableHeader.swift; sourceTree = "<group>"; };
 		F1DD672223894FBD000564A3 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				F1670C20238A260C00802AEF /* QuizResultVC.swift */,
 				F1670C22238A264200802AEF /* QuizResultVC.xib */,
 				F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */,
+				F1CE58B2238A43C000DE9BC5 /* QuizStartingVC.xib */,
+				F1CE58B4238A44AF00DE9BC5 /* QuizStartingVC.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1DD672523894FE8000564A3 /* MyProfileVC.xib in Resources */,
+				F1CE58B3238A43C000DE9BC5 /* QuizStartingVC.xib in Resources */,
 				F165F614238A1D48006DE2E7 /* QuizVC.xib in Resources */,
 				F1A289D623892B8A003CEB36 /* Media.xcassets in Resources */,
 				F1A289D323892941003CEB36 /* ChallengeView.xib in Resources */,
@@ -323,6 +330,7 @@
 			files = (
 				F1A289CC2389206F003CEB36 /* GenericTVC.swift in Sources */,
 				F165F612238A1D36006DE2E7 /* QuizVC.swift in Sources */,
+				F1CE58B5238A44AF00DE9BC5 /* QuizStartingVC.swift in Sources */,
 				F12632F023898A0E00927756 /* BaseVC.swift in Sources */,
 				F1A289C02388ABAC003CEB36 /* HTTPMethod.swift in Sources */,
 				F1DD672823895019000564A3 /* UserProfile.swift in Sources */,

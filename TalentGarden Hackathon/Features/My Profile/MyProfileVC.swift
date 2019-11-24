@@ -12,10 +12,13 @@ import UIKit
 class MyProfileVC: BaseVC {
 
     @IBOutlet private weak var statusCardView: UIView!
-
+    @IBOutlet private weak var coinsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         header?.configure(title: "My Profile")
+        configureDashboard()
     
         let layer = statusCardView.layer
         statusCardView.clipsToBounds = false
@@ -23,6 +26,14 @@ class MyProfileVC: BaseVC {
         layer.shadowColor = UIColor(red: 0, green: 174/255, blue: 239/255, alpha: 0.5).cgColor
         layer.shadowRadius = 4
         layer.shadowOffset = CGSize(width: 0, height: 3)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        configureDashboard()
+    }
+    
+    private func configureDashboard() {
+        coinsLabel.text = "\(myProfile.coins)"
     }
     
     @IBAction private func inviteButtonPressed(_ sender: UIButton) {

@@ -15,5 +15,7 @@ struct Achievement {
 
 class AchievementManager {
     static let shared = AchievementManager()
-
+    
+    var lockedAchievements = [Achievement]()
+    var unlockedAchievements = [Achievement]()
 }

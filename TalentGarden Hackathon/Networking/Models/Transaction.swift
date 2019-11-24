@@ -20,4 +20,5 @@ struct Transaction: Decodable {
     var remittanceInformationUnstructured: String?
     var creditorAccountIban: String?
     var debtorAccountIban: String?
+    var merchant: String?
 }

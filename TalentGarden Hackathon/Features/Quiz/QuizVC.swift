@@ -23,6 +23,7 @@ class QuizVC: BaseVC {
         presenter = QuizPresenter(view: self)
         header?.configure(title: "Quiz", image: UIImage(named: "chess")!, position: .left)
         view.backgroundColor = UIColor(red: 0, green: 135/255, blue: 1, alpha: 1)
+        navigationItem.hidesBackButton = true
         
         questionLabel.text = presenter?.question.question
         
