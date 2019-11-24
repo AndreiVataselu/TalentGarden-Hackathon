@@ -20,7 +20,7 @@ class BaseVC: UIViewController {
         header.center = navigationController?.navigationBar.center ?? CGPoint(x: 0, y: 0)
         navigationItem.titleView = header
         self.header = header
-        
         view.backgroundColor = UIColor(red: 1, green: 253/255, blue: 251/255, alpha: 1)
+        navigationController?.navigationBar.isTranslucent = true
     }
 }

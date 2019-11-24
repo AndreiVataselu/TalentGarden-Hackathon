@@ -12,6 +12,13 @@
 		F160B54823896979008C5966 /* LoggedInTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160B54723896979008C5966 /* LoggedInTabBar.swift */; };
 		F160B54A238969C0008C5966 /* ChallengesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F160B549238969C0008C5966 /* ChallengesVC.xib */; };
 		F160B54C23896A1D008C5966 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160B54B23896A1D008C5966 /* UIViewControllerExtension.swift */; };
+		F165F60F2389A735006DE2E7 /* AchievementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165F60E2389A735006DE2E7 /* AchievementManager.swift */; };
+		F165F612238A1D36006DE2E7 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165F611238A1D36006DE2E7 /* QuizVC.swift */; };
+		F165F614238A1D48006DE2E7 /* QuizVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F165F613238A1D48006DE2E7 /* QuizVC.xib */; };
+		F165F616238A20CF006DE2E7 /* QuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165F615238A20CF006DE2E7 /* QuizPresenter.swift */; };
+		F165F618238A2275006DE2E7 /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165F617238A2275006DE2E7 /* QuizQuestion.swift */; };
+		F1670C21238A260C00802AEF /* QuizResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1670C20238A260C00802AEF /* QuizResultVC.swift */; };
+		F1670C23238A264200802AEF /* QuizResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1670C22238A264200802AEF /* QuizResultVC.xib */; };
 		F19FF86A2388A708000EDD5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19FF8692388A708000EDD5A /* AppDelegate.swift */; };
 		F19FF8712388A708000EDD5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19FF86F2388A708000EDD5A /* Main.storyboard */; };
 		F19FF8732388A70A000EDD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19FF8722388A70A000EDD5A /* Assets.xcassets */; };
@@ -29,6 +36,7 @@
 		F1A289DC23892E24003CEB36 /* NavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A289DB23892E24003CEB36 /* NavigationHeader.xib */; };
 		F1A289DE23892E41003CEB36 /* NavigationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289DD23892E41003CEB36 /* NavigationHeader.swift */; };
 		F1A289E02389367A003CEB36 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A289DF2389367A003CEB36 /* UIColorExtension.swift */; };
+		F1CE58B1238A2D4300DE9BC5 /* QuizResultConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */; };
 		F1DD671E238940EF000564A3 /* ChallengeTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DD671D238940EF000564A3 /* ChallengeTableHeader.xib */; };
 		F1DD672023894228000564A3 /* ChallengeTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD671F23894228000564A3 /* ChallengeTableHeader.swift */; };
 		F1DD672323894FBD000564A3 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD672223894FBD000564A3 /* MyProfileVC.swift */; };
@@ -42,6 +50,13 @@
 		F160B54723896979008C5966 /* LoggedInTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInTabBar.swift; sourceTree = "<group>"; };
 		F160B549238969C0008C5966 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
 		F160B54B23896A1D008C5966 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		F165F60E2389A735006DE2E7 /* AchievementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementManager.swift; sourceTree = "<group>"; };
+		F165F611238A1D36006DE2E7 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		F165F613238A1D48006DE2E7 /* QuizVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizVC.xib; sourceTree = "<group>"; };
+		F165F615238A20CF006DE2E7 /* QuizPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPresenter.swift; sourceTree = "<group>"; };
+		F165F617238A2275006DE2E7 /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
+		F1670C20238A260C00802AEF /* QuizResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultVC.swift; sourceTree = "<group>"; };
+		F1670C22238A264200802AEF /* QuizResultVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizResultVC.xib; sourceTree = "<group>"; };
 		F19FF8662388A708000EDD5A /* TalentGarden Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TalentGarden Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19FF8692388A708000EDD5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F19FF8702388A708000EDD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +76,7 @@
 		F1A289DB23892E24003CEB36 /* NavigationHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationHeader.xib; sourceTree = "<group>"; };
 		F1A289DD23892E41003CEB36 /* NavigationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeader.swift; sourceTree = "<group>"; };
 		F1A289DF2389367A003CEB36 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultConfig.swift; sourceTree = "<group>"; };
 		F1DD671D238940EF000564A3 /* ChallengeTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeTableHeader.xib; sourceTree = "<group>"; };
 		F1DD671F23894228000564A3 /* ChallengeTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableHeader.swift; sourceTree = "<group>"; };
 		F1DD672223894FBD000564A3 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
@@ -90,6 +106,27 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F165F60D2389A712006DE2E7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F165F60E2389A735006DE2E7 /* AchievementManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F165F610238A1D28006DE2E7 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				F165F611238A1D36006DE2E7 /* QuizVC.swift */,
+				F165F613238A1D48006DE2E7 /* QuizVC.xib */,
+				F165F615238A20CF006DE2E7 /* QuizPresenter.swift */,
+				F1670C20238A260C00802AEF /* QuizResultVC.swift */,
+				F1670C22238A264200802AEF /* QuizResultVC.xib */,
+				F1CE58B0238A2D4300DE9BC5 /* QuizResultConfig.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
 		F19FF85D2388A708000EDD5A = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +146,7 @@
 		F19FF8682388A708000EDD5A /* TalentGarden Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				F165F60D2389A712006DE2E7 /* Managers */,
 				F1DD672623895006000564A3 /* UserProfile */,
 				F1A289BC2388AB78003CEB36 /* Networking */,
 				F1A289C623892027003CEB36 /* Cells */,
@@ -139,6 +177,7 @@
 		F1A289C323891F98003CEB36 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F165F610238A1D28006DE2E7 /* Quiz */,
 				F1DD672123894F2F000564A3 /* My Profile */,
 				F1A289DA23892E09003CEB36 /* Challenges */,
 			);
@@ -170,6 +209,7 @@
 			children = (
 				F1A289D823892D3A003CEB36 /* Challenge.swift */,
 				F100583823899BD100BD04B5 /* Transaction.swift */,
+				F165F617238A2275006DE2E7 /* QuizQuestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,12 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1DD672523894FE8000564A3 /* MyProfileVC.xib in Resources */,
+				F165F614238A1D48006DE2E7 /* QuizVC.xib in Resources */,
 				F1A289D623892B8A003CEB36 /* Media.xcassets in Resources */,
 				F1A289D323892941003CEB36 /* ChallengeView.xib in Resources */,
 				F19FF8762388A70A000EDD5A /* LaunchScreen.storyboard in Resources */,
 				F160B54A238969C0008C5966 /* ChallengesVC.xib in Resources */,
 				F19FF8732388A70A000EDD5A /* Assets.xcassets in Resources */,
 				F1A289DC23892E24003CEB36 /* NavigationHeader.xib in Resources */,
+				F1670C23238A264200802AEF /* QuizResultVC.xib in Resources */,
 				F1DD671E238940EF000564A3 /* ChallengeTableHeader.xib in Resources */,
 				F19FF8712388A708000EDD5A /* Main.storyboard in Resources */,
 			);
@@ -280,20 +322,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A289CC2389206F003CEB36 /* GenericTVC.swift in Sources */,
+				F165F612238A1D36006DE2E7 /* QuizVC.swift in Sources */,
 				F12632F023898A0E00927756 /* BaseVC.swift in Sources */,
 				F1A289C02388ABAC003CEB36 /* HTTPMethod.swift in Sources */,
 				F1DD672823895019000564A3 /* UserProfile.swift in Sources */,
+				F1670C21238A260C00802AEF /* QuizResultVC.swift in Sources */,
 				F1A289CF238920B3003CEB36 /* UIViewExtension.swift in Sources */,
+				F1CE58B1238A2D4300DE9BC5 /* QuizResultConfig.swift in Sources */,
 				F160B54C23896A1D008C5966 /* UIViewControllerExtension.swift in Sources */,
+				F165F60F2389A735006DE2E7 /* AchievementManager.swift in Sources */,
 				F1A289C523891FAF003CEB36 /* ChallengesVC.swift in Sources */,
 				F1A289DE23892E41003CEB36 /* NavigationHeader.swift in Sources */,
 				F100583923899BD100BD04B5 /* Transaction.swift in Sources */,
 				F1A289D123892901003CEB36 /* ChallengeView.swift in Sources */,
 				F1A289C22388AC5C003CEB36 /* NetworkInitiator.swift in Sources */,
 				F1A289BE2388AB8D003CEB36 /* Request.swift in Sources */,
+				F165F616238A20CF006DE2E7 /* QuizPresenter.swift in Sources */,
 				F1DD672023894228000564A3 /* ChallengeTableHeader.swift in Sources */,
 				F19FF86A2388A708000EDD5A /* AppDelegate.swift in Sources */,
 				F1DD672323894FBD000564A3 /* MyProfileVC.swift in Sources */,
+				F165F618238A2275006DE2E7 /* QuizQuestion.swift in Sources */,
 				F1A289D923892D3A003CEB36 /* Challenge.swift in Sources */,
 				F1A289E02389367A003CEB36 /* UIColorExtension.swift in Sources */,
 				F160B54823896979008C5966 /* LoggedInTabBar.swift in Sources */,

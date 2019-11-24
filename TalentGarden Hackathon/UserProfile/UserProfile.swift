@@ -11,6 +11,7 @@ import Foundation
 struct UserProfile: Decodable {
     var firstName: String
     var lastName: String
+    var coins: Int
 }
 
 extension UserProfile {
@@ -19,4 +20,5 @@ extension UserProfile {
     }
 }
 
-let myProfile = UserProfile(firstName: "Michael", lastName: "Jackson")
+// For mocking purposes
+var myProfile = UserProfile(firstName: "Michael", lastName: "Jackson", coins: 0)

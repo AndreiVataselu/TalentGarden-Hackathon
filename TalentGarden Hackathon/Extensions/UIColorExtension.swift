@@ -28,4 +28,12 @@ extension UIColor {
 
         return image
     }
+    
+    static var seaweed: UIColor {
+        return UIColor(red: 30/255, green: 214/255, blue: 108/255, alpha: 1)
+    }
+    
+    static var ketchup: UIColor {
+        return UIColor(red: 201/255, green: 29/255, blue: 0, alpha: 1)
+    }
 }

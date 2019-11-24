@@ -18,12 +18,20 @@ class ChallengesVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        header?.configure(title: "2414141", image: UIImage(named: "dollar")!, position: .right)
+        reconfigureHeader()
         
         tableView.register(ChallengeTVC.self, forCellReuseIdentifier: String(describing: ChallengeTVC.self))
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        reconfigureHeader()
+    }
+    
+    private func reconfigureHeader() {
+        header?.configure(title: "\(myProfile.coins)", image: UIImage(named: "dollar")!, position: .right)
     }
 }
 

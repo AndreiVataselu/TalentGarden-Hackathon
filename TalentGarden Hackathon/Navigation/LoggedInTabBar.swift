@@ -12,6 +12,7 @@ import UIKit
 enum LoggedInFlows: CaseIterable {
     case myProfile
     case challenges
+    case quiz
     
     var viewController: UIViewController {
         switch self {
@@ -19,6 +20,8 @@ enum LoggedInFlows: CaseIterable {
             return MyProfileVC.fromNib()
         case .challenges:
             return ChallengesVC.fromNib()
+        case .quiz:
+            return QuizVC.fromNib()
         }
     }
     
@@ -28,13 +31,29 @@ enum LoggedInFlows: CaseIterable {
             return "Profile"
         case .challenges:
             return "Challenges"
+        case .quiz:
+            return "Quiz"
         }
+    }
+    
+    var image: UIImage {
+        var imageName = ""
+        switch self {
+        case .myProfile:
+            imageName = "dashboard"
+        case .challenges:
+            imageName = "rocketship"
+        case .quiz:
+            imageName = "apps"
+        }
+        return UIImage(named: imageName)!
     }
     
     func flow() -> UIViewController {
         let navigationController = UINavigationController()
         navigationController.setRootViewController(viewController)
         navigationController.tabBarItem.title = title
+        navigationController.tabBarItem.image = image
         return navigationController
     }
 }
